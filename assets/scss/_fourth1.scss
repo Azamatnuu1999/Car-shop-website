@@ -1,0 +1,64 @@
+.fourth1{
+    background-image: url(../media/_.png), url(../media/_\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 7.9% 0, 3% 7%;
+    .contain{
+        background-image: url(../media/_\ \(2\).png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        &__h3{
+            font-weight: 900;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__card1{
+                width: 26%;
+                font-size: 13px;
+                margin: 20px 0;
+                span{
+                    color: #0088cf;
+                    font-weight: 600;
+                }
+            }
+            &__strelka{
+                width: 11%;
+                margin: 20px 0;
+                color: #0088cf;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .fourth1{
+        .contain{
+            .main{
+                &__card1{
+                    width: 80%;
+                }
+                &__strelka{
+                    width: 19%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .fourth1{
+        .contain{
+            width: 96%;
+            .main{
+                &__card1{
+                    width: 74%;
+                }
+                &__strelka{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

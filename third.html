@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- SHOWCASE -->
+    <header id="top">
+        <div class="contain">
+            <nav class="navbar">
+                <ul class="navbar__logo">
+                    <li><a href="./index.html"><img src="./assets/media/photo_2022-03-13_08-31-06 1.png" alt=""></a></li>
+                    <li><b>Аренда автомобилей 
+                        с выкупом
+                        №1 на Юге России</b> <br>
+                        <span>Выгодные и честные условия</span>
+                    </li>
+                </ul>
+                <ul class="navbar__right">
+                    <li>
+                        <img src="./assets/media/Vector.png" alt="not">
+                    </li>
+                    <li class="main">
+                        <a href="#">
+                        <b>Ставрополь ул. Доваторцев, 21</b><br> 
+                        <span>Выбрать город</span></a>
+                    </li>
+                    <li>
+                        <img src="./assets/media/Vector (1).png" alt="not">
+                    </li>
+                    <li class="main">
+                        <a href="tel:8 (962) 495-55-54">
+                        <b>+8 (962) 495-55-54</b><br> 
+                        <span>Заказать звонок</span></a>
+                    </li>
+                </ul>
+                <label for="checkbox" class="navbar__label">
+                    <img src="./assets/media/Group 272.png" alt="bars">
+                </label>
+            </nav>
+        </div>
+        <div class="contain1">
+            <div class="contain">
+                <nav class="links">
+                    <input type="checkbox" id="checkbox" class="links__input">
+                    <ul class="links__ul">
+                        <label for="checkbox">
+                            <i class="fa-solid fa-x"></i>
+                        </label>
+                        <li><select name="katalog" id="katalog" onchange="location = this.value;">
+                            <option value="#" class="first">Каталог автомобилей</option>
+                            <option value="./index.html">Новые авто</option>
+                            <option value="#">Авто с пробегом</option>
+                        </select></li>
+                        <li>
+                            <select name="Варианты покупки" id="Варианты покупки" onchange="location = this.value;">
+                                <option value="#" class="first">Варианты покупки</option>
+                                <option value="./second.html">Аренда с выкупом</option>
+                                <option value="#">Рассрочка</option>
+                                <option value="#">Наличные</option>
+                                <option value="#">В кредит</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="./third.html">Дубликаты госномеров</a>
+                        </li>
+                        <li>
+                            <a href="#">Истории выкупа</a>
+                        </li>
+                        <li>
+                            <select name="О компании" id="О компании">
+                                <option value="О компании" class="first">О компании</option>
+                                <option value="Вакансии"><a href="#">Вакансии</a></option>
+                                <option value="Команда"><a href="#">Команда</a></option>
+                                <option value="Новости"><a href="#">Новости</a></option>
+                            </select>
+                        </li>
+                        <li class="contact"><a href="#">Контакты</a></li>
+                        <li class="profil"><a href="./fourth.html"><img src="./assets/media/layer1.png" alt="not">Личный кабинет</a></li>
+                            <li class="main">
+                                <img src="./assets/media/Vector.png" alt="not">
+                                <a href="#">
+                                <b>Ставрополь ул. Доваторцев, 21</b><br> 
+                                <span>Выбрать город</span></a>
+                            </li>
+                            <li class="main">
+                                <img src="./assets/media/Vector (1).png" alt="not">
+                                <a href="tel:8 (962) 495-55-54">
+                                <b>+8 (962) 495-55-54</b><br> 
+                                <span>Заказать звонок</span></a>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SECOND3 -->
+    <section class="second3">
+        <div class="contain">
+            <div class="advertising">
+                <div class="left">
+                    <button class="left__button">
+                        Спецпредложение
+                    </button>
+                </div>
+                <div class="center">
+                    <h4 class="center__h4">
+                        Приведи друга и получите вместе получите скидку!
+                    </h4>
+                    <p class="center__p">
+                        Если по  ващей рекомендации ващ друг/знакомый заключает договор в компании “Бери Рули” Он получает 5 000 рублей от оценочной стоимости своего автомобиля! После того как он внесет второй  платеж, 5 000 тысяч рублей отнимется о стоимости автомобиля!
+                    </p>
+                </div>
+                <div class="right">
+                    <p class="right__p">
+                        Свернуть<b>></b>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <h3 class="left__h3">
+                        Данные договора 124315
+                    </h3>
+                    <p class="left__p">
+                        Здравствуйте, Анаит Эдиковна!  <br>
+                        Ваш менеджер: Алексей Владимирович
+                    </p>
+                </div>
+                <div class="right">
+                    <button class="right__button">
+                        Письмо директору
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THIRD3 -->
+    <section class="third3">
+        <div class="contain">
+            <h4 class="contain__h4">
+                Информация об автомобиле
+            </h4>
+            <div class="flex">
+                <ul class="flex__left">
+                    <li>Номер: <b> M4539EY129</b></li>
+                    <li>Марка: <b> ВАЗ (LADA)</b></li>
+                    <li>Модель: <b> Vesta CNG</b></li>
+                    <li>Пробег на момент заключения: <b> 800 м</b></li>
+                    <li><h4>Штрафы ГБДД</h4></li>
+                    <li>Штрафы ГБДД</li>
+                </ul>
+                <ul class="flex__center">
+                    <li>Залог: <b> 25 000 рублей</b></li>
+                    <li>Остаток к выкупу на 10.04 22 <b> 930 600 рублей</b></li>
+                    <li>Сумма на дату платежа  <b> 948 600 рублей</b></li>
+                </ul>
+                <ul class="flex__right">
+                    <li><b>Платеж 45 000 руб/ мес</b></li>
+                    <li>Аренда 17 500</li>
+                    <li>Выкуп 17 500</li>
+                    <li><img src="./assets/media/qrcode.jpg" width="160px" alt="not"></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h3 class="title__h3">Платежные данные</h3>
+            </div>
+            <div class="center">
+                <ul class="card1">
+                    <li class="card1__li"><b>Общие данные</b></li>
+                    <li class="card1__li">Оценочная стоимость <span>1 000 000</span></li>
+                    <li class="card1__li">Общая задолженность <span>0.00</span></li>
+                    <li class="card1__li">Прочее <span>0.00</span></li>
+                </ul>
+                <ul class="card1 middle">
+                    <li class="card1__li"><b>Прошлый период</b></li>
+                    <li class="card1__li">Задолженность по платежу <span>0.00</span></li>
+                    <li class="card1__li">Задолженность
+                        по аренде <span>0.00</span></li>
+                    <li class="card1__li">Задолженность по выкупу <span>0.00</span></li>
+                    <li class="card1__li">Пени<span>0.00</span></li>
+                </ul>
+                <ul class="card1">
+                    <li class="card1__li"><b>Текущий период</b></li>
+                    <li class="card1__li">Текущий период <span>0.00</span></li>
+                    <li class="card1__li">Задолженность
+                        по аренде <span>0.00</span></li>
+                    <li class="card1__li">Задолженность по выкупу <span>0.00</span></li>
+                    <li class="card1__li">Пени<span>0.00</span></li>
+                </ul>
+            </div>
+
+            <div class="title">
+                <h3 class="title__h3">Платежи по договору</h3>
+            </div>
+
+            <table class="table">
+                <tr class="table__tr">
+                    <th>Дата</th>
+                    <th>Операция</th>
+                    <th>Период оплаты с </th>
+                    <th>Период оплаты до </th>
+                    <th>Сумма оплаты</th>
+                    <th>Сумма арендв</th>
+                    <th>Сумма выкупа</th>
+                    <th>Пени</th>
+                    <th>Штрафы</th>
+                    <th>Вид оплаты</th>
+                </tr>
+                <tr class="table__tr">
+                    <td>15.09.21</td>
+                    <td>Оплата аренды</td>
+                    <td>15.09.21 </td>
+                    <td>15.10.20 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Плановый</td>
+                </tr>
+                <tr class="table__tr">
+                    <td>15.09.21</td>
+                    <td>Оплата аренды</td>
+                    <td>15.09.21 </td>
+                    <td>15.10.20 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Плановый</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FIVE -->
+    <section class="five">
+        <div class="contain">
+            <div class="fifty">
+                <h3 class="fifty__h3">
+                    Остались вопросы? <span>Свяжитесь с нами</span>
+                </h3>
+                <p class="fifty__p">
+                    Если вы столкнулись с трудностями при
+                    работе с Бери Рули, у Вас есть какие-то замечания или предложения — позвоните.
+                    <b>Прием звонков с 09:00 до 18:00</b>
+                </p>
+                <a href="tel:+7 (962) 495 55 54" class="fifty__a">+7 (962) 495 55 54</a>
+            </div>
+            <div class="fifty">
+                <form action="#" class="form">
+                    <input type="text" placeholder="Ваше имя" required><br>
+                    <input type="tel" placeholder="Номер телефона" required><br>
+                    <input type="text" placeholder="Ваш вопрос" required>
+                    <ul>
+                        <li><input type="checkbox" id="check">
+                        <label for="check"> Согласие на обработку персональных данных</label></li>
+                        <li><button>Задать вопрос</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contain">
+            <div class="links">
+                <ul class="link1">
+                    <li class="link1__li">
+                        <a href="#">Ставрополь:</a>
+                         ул. Доваторцев, 21
+                    </li>
+                    <li class="link1__li">
+                        Главный офис: <a href="#">г. Пятигорск ул.Бунимовича д.38</a>
+                    </li>
+                    <li class="link1__li">
+                        График работы: <a href="#">Пн-Сб с 9:00 до 18:00</a>
+                    </li>
+                    <li class="link1__li">
+                        E-mail: <a href="mailto:avto@beri-ruli.ru">avto@beri-ruli.ru</a>
+                    </li>
+                    <li class="link1__bottom">
+                        <a href="tel:+7 (962) 495 55 54">
+                            +7 (962) 495 55 54
+                        </a>
+                    </li>
+                </ul>
+                <ul class="link2">
+                    <li class="link2__li">
+                        <b>О “Бери рули”</b>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Команда</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Вакансии</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Акции и спецпредложения</b></a>
+                    </li>
+                </ul>
+                <ul class="link2">
+                    <li class="link2__li">
+                        <b>Каталог авто</b>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Аренда с выкупом</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Истории выкупа</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Дубликаты гос.номеров</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Контакты</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul class="messengers">
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-vk fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-telegram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li class="right__li">
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="right__li">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="right__li">
+                        <a href="#">Реквизиты компании</a>
+                    </li>
+                    <li class="right__top">
+                        <a href="#top" title="to top"><div>></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

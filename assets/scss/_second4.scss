@@ -1,0 +1,49 @@
+.second4{
+    .contain{
+        .form{
+            width: 320px;
+            margin: 60px auto;
+            text-align: center;
+            &__button{
+                padding: 10px 30px;
+                border: none;
+                margin: 20px 0;
+                width: 100%;
+                border-radius: 6px;
+                background-color: #0088CF;
+                color: white;
+                font-weight: 600;
+            }
+            &__button:hover{
+                color: #0088CF;
+                background-color: white;
+                transition-duration: .3s;
+                transition-timing-function: linear;
+                box-shadow: 0 0 8px #0088CF;
+            }
+            &__h3{
+                font-weight: 900;
+            }
+            &__p{
+                font-size: 14px;
+            }
+            &__input{
+                width: 100%;
+                margin: 10px 0;
+                line-height: 36px;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .second4{
+        .contain{
+            width: 96%;
+            .form{
+                width: 100%;
+            }
+        }
+    }
+}

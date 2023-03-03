@@ -1,0 +1,91 @@
+.eight1{
+    background-image: url(../media/Group\ 347.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 35%;
+    height: 400px;
+    .contain{
+        .text{
+            font-size: 14px;
+            width: 45%;
+            margin: 0 20% 0 35%;
+            padding-top: 50px;
+            &__h3{
+                font-weight: 600;
+            }
+            &__p{
+                span{
+                    color: #0088cf;
+                    font-weight: 600;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:1050px){
+    .eight1{
+        .contain{
+            .text{
+                padding-top: 0;
+                width: 65%;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:850px){
+    .eight1{
+        background-position: right top;
+        background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.459)), url(../media/Group\ 347.png); 
+        background-size: 50%;
+        height: 450px;
+        .contain{
+            .text{
+                padding-top: 0;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .eight1{
+        background-position: right top;
+        background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.459)), url(../media/Group\ 347.png); 
+        background-size: 80%;
+        .contain{
+            width: 96%;
+            .text{
+                padding-top: 0;
+                width: 100%;
+                margin: 0 auto;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width:300px){
+    .eight1{
+        height: 430px;
+        .contain{
+            .text{
+                padding-top: 0;
+                width: 100%;
+                margin: 0 auto;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media(max-width:220px){
+    .eight1{
+        height: 470px;
+    }
+}

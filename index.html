@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- SHOWCASE -->
+    <header id="top">
+        <div class="contain">
+            <nav class="navbar">
+                <ul class="navbar__logo">
+                    <li><a href="./index.html"><img src="./assets/media/photo_2022-03-13_08-31-06 1.png" alt=""></a></li>
+                    <li><b>Аренда автомобилей 
+                        с выкупом
+                        №1 на Юге России</b> <br>
+                        <span>Выгодные и честные условия</span>
+                    </li>
+                </ul>
+                <ul class="navbar__right">
+                    <li>
+                        <img src="./assets/media/Vector.png" alt="not">
+                    </li>
+                    <li class="main">
+                        <a href="#">
+                        <b>Ставрополь ул. Доваторцев, 21</b><br> 
+                        <span>Выбрать город</span></a>
+                    </li>
+                    <li>
+                        <img src="./assets/media/Vector (1).png" alt="not">
+                    </li>
+                    <li class="main">
+                        <a href="tel:8 (962) 495-55-54">
+                        <b>+8 (962) 495-55-54</b><br> 
+                        <span>Заказать звонок</span></a>
+                    </li>
+                </ul>
+                <label for="checkbox" class="navbar__label">
+                    <img src="./assets/media/Group 272.png" alt="bars">
+                </label>
+            </nav>
+        </div>
+        <div class="contain1">
+            <div class="contain">
+                <nav class="links">
+                    <input type="checkbox" id="checkbox" class="links__input">
+                    <ul class="links__ul">
+                        <label for="checkbox">
+                            <i class="fa-solid fa-x"></i>
+                        </label>
+                        <li><select name="katalog" id="katalog" onchange="location = this.value;">
+                            <option value="#" class="first">Каталог автомобилей</option>
+                            <option value="./index.html">Новые авто</option>
+                            <option value="#">Авто с пробегом</option>
+                        </select></li>
+                        <li>
+                            <select name="Варианты покупки" id="Варианты покупки" onchange="location = this.value;">
+                                <option value="#" class="first">Варианты покупки</option>
+                                <option value="./second.html">Аренда с выкупом</option>
+                                <option value="#">Рассрочка</option>
+                                <option value="#">Наличные</option>
+                                <option value="#">В кредит</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="./third.html">Дубликаты госномеров</a>
+                        </li>
+                        <li>
+                            <a href="#">Истории выкупа</a>
+                        </li>
+                        <li>
+                            <select name="О компании" id="О компании">
+                                <option value="О компании" class="first">О компании</option>
+                                <option value="Вакансии"><a href="#">Вакансии</a></option>
+                                <option value="Команда"><a href="#">Команда</a></option>
+                                <option value="Новости"><a href="#">Новости</a></option>
+                            </select>
+                        </li>
+                        <li class="contact"><a href="#">Контакты</a></li>
+                        <li class="profil"><a href="fourth.html"><img src="./assets/media/layer1.png" alt="not">Личный кабинет</a></li>
+                            <li class="main">
+                                <img src="./assets/media/Vector.png" alt="not">
+                                <a href="#">
+                                <b>Ставрополь ул. Доваторцев, 21</b><br> 
+                                <span>Выбрать город</span></a>
+                            </li>
+                            <li class="main">
+                                <img src="./assets/media/Vector (1).png" alt="not">
+                                <a href="tel:8 (962) 495-55-54">
+                                <b>+8 (962) 495-55-54</b><br> 
+                                <span>Заказать звонок</span></a>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="contain">
+                <div class="text">
+                    <h1 class="text__h1">
+                        Аренда автомобиля с выкупом 
+                        в Ставрополе от <span>530 ₽ в сутки</span>
+                    </h1>
+                    <span class="text__span">
+                        Удобнее и выгоднее, чем копить на машину
+                    </span>
+                    <img src="./assets/media/car.png" alt="img" class="text__img"><br>
+                    <button class="text__button">
+                        Смотреть каталог авто
+                    </button>
+                    <h3 class="text__h3">
+                        Без кредита
+                    </h3>
+                    <p class="text__p">
+                        Оформив аренду авто с последующим выкупом, вы можете сразу же получить автомобиль в свое распоряжение, погашая его стоимость частями.
+                    </p>
+                </div>
+                <div class="bottom">
+                    <div class="card">
+                        <h3 class="card__h3">
+                            Нужен только паспорт и права
+                        </h3>
+                        <p class="card__p">
+                            Не нужна справка с места работы и кредитная история
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__h3">
+                            0% комиссий
+                        </h3>
+                        <p class="card__p">
+                            Выкуп авто в любой момент
+                            без комиссий
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__h3">
+                            Регулируйте сумму выплат
+                        </h3>
+                        <p class="card__p">
+                            Сами выбираете сумму для выплат от 18.000 тысяч в месяц
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom1">
+            <div class="contain">
+                <h3 class="contain__h3">Мы подходим вам, если:</h3>
+                <div class="flex">
+                    <ul class="fifty">
+                        <li><img src="./assets/media/check.png" alt="not"> Вы хотите приобрести авто уже сегодня</li>
+                        <li><img src="./assets/media/check.png" alt="not"> Вы хотите экономить на ежемесячном платеже за свой автомобиль</li>
+                        <li><img src="./assets/media/check.png" alt="not"> Хотите купить авто под такси</li>
+                        </li>
+                    </ul>
+                    <ul class="fifty">
+                        <li><img src="./assets/media/check.png" alt="not"> Вам не одобряют кредит в банке</li>
+                        <li><img src="./assets/media/check.png" alt="not"> Вам нужно приобрести несколько автомобилей на выгодных условиях</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECOND -->
+    <section class="second">
+        <div class="contain">
+            <h3 class="contain__h3">
+                Выкупать автомобиль с нами <span>удобно, быстро и выгоднее</span> чем в банке
+            </h3>
+            <ul class="flex">
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"><span> 95% наших клиентов</span> выкупают автомобиль</li>
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"><span> 11 месяцев</span> среднее время выкупа  в «Бери Рули»</li>
+            </ul>
+            <ul class="main">
+                <li class="main__li">
+                    <img src="./assets/media/coins-stacks-money_icon-icons.com_56191 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>Нет фиксированной суммы взноса</b><br>
+                            Чтобы быстрее выкупить автомобиль — просто напишите об этом менеджеру
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li">
+                    <img src="./assets/media/savings_payment_dollar_investment_money_icon_188483 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>Возвращаем
+                                деньги</b><br>
+                             За не выкупленный автомобиль
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li">
+                    <img src="./assets/media/money_dollar_arrows_refresh_update_business_finance_investment_icon_188624 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>Сами выбираете сумму для выплат</b><br>
+                            От 18 000 тысяч в месяц
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li">
+                    <img src="./assets/media/credit-card_96970 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>10 дней отсрочка платежа</b><br>
+                            Успеете поправить свои дела и внести платеж
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li">
+                    <img src="./assets/media/353414-gift-present_107492 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>Дарим страховку ОСАГО
+                                на один год</b><br>
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li">
+                    <img src="./assets/media/badge_discount_icon_178995 1.png" alt="not">
+                    <div>
+                        <p>
+                            <b>Скидка 20% на выкуп</b><br>
+                            Всех последующих автомобилей
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li class="bottom__li">
+                    <img src="./assets/media/passport_icon_137323 1.png" alt="not" class="img">
+                    Права
+                    <img src="./assets/media/p.png" alt="not" class="p">
+                </li>
+                <li class="bottom__li">
+                    <img src="./assets/media/passport_icon_150911 1.png" alt="not" class="img">
+                    Паспорт
+                    <img src="./assets/media/p.png" alt="not" class="p">
+                </li>
+                <li class="bottom__li">
+                    <img src="./assets/media/passport_icon_150911 2.png" alt="not" class="img">
+                    Первый взнос
+                    <img src="./assets/media/p.png" alt="not" class="p">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- THIRD -->
+    <section class="third1">
+        <div class="contain">
+            <ul class="text">
+                <li class="text__li">
+                   <h3>Каталог автомобилей с пробегом</h3> 
+                </li>
+                <li class="text__li">
+                    <button>Смотреть весь каталог</button>
+                </li>
+            </ul>
+        </div>
+        <div class="contain">
+            <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1.png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (1).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (2).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1.png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (1).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (2).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- FOURTH -->
+    <section class="fourth">
+        <div class="contain">
+            <div class="text">
+                <h3 class="text__h3">
+                    Получить автомобиль легко 
+                    <span>всего 4 шага и 30 минут времени </span> 
+                </h3>
+                <p class="text__p">
+                    Срок выкупа — от 3 месяцев до 2 лет
+                </p>
+            </div>
+            <ul class="ul">
+                <li class="ul__li">
+                    <h3> <span> 1. Ш</span>аг</h3>
+                    <p><b>Выбирайте</b> автомобиль на сайте
+                        или сразу приезжайте в наш офис.
+                        Уточнить время можно по телефону</p>
+                    <h3>8 800 456</h3>
+                    <button>Заказать звонок</button>
+                </li>
+                <li class="ul__li">
+                    <h3> <span> 2. Ш</span>аг</h3>
+                    <p><b>Вместе</b> рассчитаем первый взнос и удобный ежемесячный платеж.
+                        Сумму платежа потом можно изменить.
+                        Первый взнос можно внести сразу или в рассрочку
+                        в течение 10 дней</p>
+                </li>
+                <li class="ul__li">
+                    <h3> <span> 3. Ш</span>аг</h3>
+                    <p><b>Заключаем</b> договор и создаем для вас личный кабинет на сайте, где будет отражаться вся история взносов</p>
+                </li>
+                <li class="ul__li">
+                    <h3> <span> 4. Ш</span>аг</h3>
+                    <p><b>Передаем</b> вам ключи от автомобиля. У вас есть 24 часа на тест-драйв — чтобы убедиться, что именно этот автомобиль вам подходит</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- THIRD -->
+
+    <section class="third1">
+        <div class="contain">
+            <ul class="text">
+                <li class="text__li">
+                   <h3>Каталог автомобилей с пробегом</h3> 
+                </li>
+                <li class="text__li">
+                    <button>Смотреть весь каталог</button>
+                </li>
+            </ul>
+        </div>
+        <div class="contain">
+            <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1.png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (1).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (2).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1.png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (1).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/media/6844e821a93c95e138813edea2cdfbdd 1 (2).png" alt="not">
+                            <span class="s1">
+                                VIN-номера проверены 
+                            </span>
+                            <span class="s2">
+                                VIN-номера проверены
+                            </span>
+                        </div>
+                        <div class="main">
+                            <span class="main__span">Без пробега</span><br>
+                            <h3 class="main__h3">Ваз (Lada) Гранта седан Comfort 16 КЛ</h3>
+                            <ul class="main__ul">
+                                <li>
+                                    Год выпуска 2021 <br>
+                                    Аренда с выкупом <br>
+                                    Рассрочка  <br>
+                                    Наличные
+                                </li>
+                                <li class="second">
+                                    <br>
+                                    1 300 руб/сутки <br>
+                                    1 200 руб/сутки  <br>
+                                    1 200 руб/сутки
+                                </li>
+                            </ul>
+                            <button class="main__button">
+                                Полные характеристики
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND -->
+    <section class="second">
+        <div class="contain">
+            <h3 class="contain__h3">
+                <span>Аренда с выкупом</span> автомобиля с нами — это: 
+            </h3>
+            <ul class="flex">
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"> Всегда не менее <span>25 автобомобилей на ваш выбор</span></li>
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"> <span> Официальные договор</span> и прозрачные условия</li>
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"> <span> Доступ в личный кабинет</span> с историей платежей и прогрессом выплат</li>
+                <li class="flex__li"><img src="./assets/media/check.png" alt="not"> <span> Персональный менеджер,</span> который всегда поможет
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FIVE -->
+    <section class="five">
+        <div class="contain">
+            <div class="fifty">
+                <h3 class="fifty__h3">
+                    Остались вопросы? <span>Свяжитесь с нами</span>
+                </h3>
+                <p class="fifty__p">
+                    Если вы столкнулись с трудностями при
+                    работе с Бери Рули, у Вас есть какие-то замечания или предложения — позвоните.
+                    <b>Прием звонков с 09:00 до 18:00</b>
+                </p>
+                <a href="tel:+7 (962) 495 55 54" class="fifty__a">+7 (962) 495 55 54</a>
+            </div>
+            <div class="fifty">
+                <form action="#" class="form">
+                    <input type="text" placeholder="Ваше имя" required><br>
+                    <input type="tel" placeholder="Номер телефона" required><br>
+                    <input type="text" placeholder="Ваш вопрос" required>
+                    <ul>
+                        <li><input type="checkbox" id="check">
+                        <label for="check"> Согласие на обработку персональных данных</label></li>
+                        <li><button>Задать вопрос</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contain">
+            <div class="links">
+                <ul class="link1">
+                    <li class="link1__li">
+                        <a href="#">Ставрополь:</a>
+                         ул. Доваторцев, 21
+                    </li>
+                    <li class="link1__li">
+                        Главный офис: <a href="#">г. Пятигорск ул.Бунимовича д.38</a>
+                    </li>
+                    <li class="link1__li">
+                        График работы: <a href="#">Пн-Сб с 9:00 до 18:00</a>
+                    </li>
+                    <li class="link1__li">
+                        E-mail: <a href="mailto:avto@beri-ruli.ru">avto@beri-ruli.ru</a>
+                    </li>
+                    <li class="link1__bottom">
+                        <a href="tel:+7 (962) 495 55 54">
+                            +7 (962) 495 55 54
+                        </a>
+                    </li>
+                </ul>
+                <ul class="link2">
+                    <li class="link2__li">
+                        <b>О “Бери рули”</b>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Команда</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Вакансии</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Акции и спецпредложения</b></a>
+                    </li>
+                </ul>
+                <ul class="link2">
+                    <li class="link2__li">
+                        <b>Каталог авто</b>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Аренда с выкупом</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Истории выкупа</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Дубликаты гос.номеров</b></a>
+                    </li>
+                    <li class="link2__li">
+                        <a href="#"><b>Контакты</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul class="messengers">
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-vk fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-telegram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="messengers__li">
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li class="right__li">
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="right__li">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="right__li">
+                        <a href="#">Реквизиты компании</a>
+                    </li>
+                    <li class="right__top">
+                        <a href="#top" title="to top"><div>></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

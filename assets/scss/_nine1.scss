@@ -1,0 +1,51 @@
+.nine1{
+    .contain{
+        margin-bottom: 40px;
+        &__h3{
+            font-weight: 900;
+        }
+        &__p{
+            font-size: 14px;
+            width: 70%;
+        }
+        &__h4{
+            font-weight: 800;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            .card1{
+                width: 26%;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                }
+                &__h4{
+                    font-weight: 700;
+                }
+                &__p{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .nine1{
+        .contain{
+            width: 96%;
+            &__p{
+                width: 100%;
+            }
+            .flex{
+                .card1{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

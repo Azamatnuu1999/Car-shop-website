@@ -1,0 +1,154 @@
+.third1{
+    .contain{
+        padding: 30px 0;
+        .text{
+            display: flex;
+            margin: 10px 0 1px;
+            justify-content: space-between;
+            &__li{
+                h3{
+                    font-weight: 900;
+                }
+                button{
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #0088CF;
+                    color: white;
+                    font-weight: 600;
+                }
+                button:hover{
+                    color: #0088CF;
+                    background-color: white;
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    box-shadow: 0 0 8px #0088CF;
+                }
+            }
+        }
+        .slider{
+            ul{
+                li{
+                    border-radius: 8px;
+                    overflow: hidden;
+                    width: 31.5%;
+                    color: black;
+                    margin: 1%;
+                    *{
+                        font-size: 13px;
+                    }
+                    .img{
+                        position: relative;
+                        .s1{
+                            position: absolute;
+                            top: 2px;
+                            background-color: #FCEC4FC4;
+                            left: 4px;
+                            font-size: 12px;
+                            line-height: 24px;
+                        }
+                        .s2{
+                            position: absolute;
+                            top: 29px;
+                            font-size: 12px;
+                            background-color: #FCEC4FC4;
+                            left: 4px;
+                            line-height: 24px;
+                        }
+                    }
+                    .main{
+                        padding: 10px;
+                        &__span{
+                            color: #0088CF;
+                        }
+                        &__h3{
+                            color: black;
+                            font-weight: 900;
+                            margin: 10px 0;
+                        }
+                        &__ul{
+                            width: 100%;
+                            padding: 0;
+                            margin-bottom: 10px;
+                            display: flex;
+                            li{
+                                width: 49%;
+                                line-height: 23px;
+                                font-size: 11px;
+                            }
+                            .second{
+                                text-align: end;
+                                font-weight: 700;
+                            }
+                        }
+                        &__button{
+                            width: 100%;
+                            font-weight: 700;
+                            padding: 10px 0;
+                            border: none;
+                            border-radius: 3px;
+                            background-color: #f5f5f5;
+                        }
+                        &__button:hover{
+                            color: white;
+                            background-color: #0088CF;
+                            transition-duration: .3s;
+                            transition-timing-function: linear;
+
+                        }
+                    }
+                }
+                li:hover{
+                    transform: scale(1.02);
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    cursor: pointer;
+                    background-color: #E5E5E5;
+                    button{
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .third1{
+        .contain{
+            width: 96%;
+            .slider{
+                ul{
+                    li{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .third1{
+        .contain{
+            .text{
+                width: 96%;
+                &__li{
+                    button{
+                        display: none;
+                    }
+                }
+            }
+            .slider{
+                ul{
+                    li{
+                        width: 98%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

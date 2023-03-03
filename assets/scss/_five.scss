@@ -1,0 +1,107 @@
+.five{
+    background-color: #F5F5F9;
+    .contain{
+        display: flex;
+        justify-content: space-around;
+        .fifty{
+            width: 49%;
+            padding: 30px 0;
+            &__h3{
+                font-weight: 900;
+                span{
+                    color: #0080cf;
+                }
+            }
+            &__p{
+                font-size: 14px;
+            }
+            &__a{
+                color: #0080cf;
+                font-weight: 900;
+            }
+            form{
+                input{
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 5px;
+                    outline: none;
+                }
+                ul{
+                    width: 100%;
+                    display: flex;  
+                    padding-left: 0;
+                    justify-content: space-between;
+                    li{
+                        align-items: flex-start;
+                        display: flex;
+                        gap: 3px;
+                        width: 49%;
+                        font-size: 13px;
+                        input{
+                            width: fit-content;
+                        }
+                        button{
+                            width: 100%;
+                            padding: 10px 30px;
+                            border: none;
+                            border-radius: 6px;
+                            background-color: #0088CF;
+                            color: white;
+                            font-weight: 600;
+                        }
+                        button:hover{
+                            color: #0088CF;
+                            background-color: white;
+                            transition-duration: .3s;
+                            transition-timing-function: linear;
+                            box-shadow: 0 0 8px #0088CF;
+                        }
+                    }
+                }
+            }
+        }
+        .fifty:nth-child(1){
+            width: 35%;
+        }
+    }
+}
+
+@media(max-width:817px){
+    .five{
+        background-color: #F5F5F9;
+        .contain{
+            flex-wrap: wrap;
+            .fifty{
+                width: 100%;
+                form{
+                    ul{
+                        li{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .fifty:nth-child(1){
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:397px){
+    .five{
+        .contain{
+            width: 96%;
+            .fifty{
+                form{
+                    ul{
+                        flex-wrap: wrap;
+                        li{
+                            width: 100%;
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

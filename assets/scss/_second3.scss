@@ -1,0 +1,142 @@
+.second3{
+    .contain{
+        .advertising{
+            display: flex;
+            background-color: #0088cf;
+            color: white;
+            padding: 30px 20px;
+            font-size: 13px;
+            margin: 40px 0;
+            .left{
+                background-image: url(../media/handshake.png);
+                background-size: 100%;
+                background-position: left top;
+                &__button{
+                    margin: 0 40px 0 0;
+                    background-color: #FCEC4F;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 8px;
+                }
+                &__button:hover{
+                    background-color: #0088cf;
+                    color: white;
+                    box-shadow: 0 0 5px #FCEC4F;
+                    transition-timing-function: linear;
+                    transition-duration: .3s;
+                }
+            }
+            .center{
+                &__h4{
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+            .right{
+                cursor: pointer;
+            }
+            .right{
+                &__p:hover{
+                    color: #FCEC4F;
+                }
+            } 
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .left{
+                width: 45%;
+                &__h3{
+                    font-weight: 900;
+                }
+                &__p{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+            .right{
+                width: 45%;
+                text-align: end;
+                &__button{
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #0088CF;
+                    color: white;
+                    font-weight: 600;
+                }
+                &__button:hover{
+                    color: #0088CF;
+                    background-color: white;
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    box-shadow: 0 0 8px #0088CF;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    .second3{
+        .contain{
+            .advertising{
+                flex-wrap: wrap;
+                .left{
+                    width: 50%;
+                }
+                .center{
+                    width: 100%;
+                    order: 1;
+                }
+                .right{
+                    width: 50%;
+                    order: 0;
+                    text-align: end;
+                }
+            }
+            .bottom{
+                .left{
+                    width: 50%;
+                }
+                .right{
+                    width: 50%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .second3{
+        .contain{
+            width: 96%;
+            .bottom{
+                .left{
+                    width: 100%;
+                }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:250px){
+    .second3{
+        .contain{
+            .advertising{
+                .left, .right{
+                    width: 100%;
+                    text-align: center;
+                    &__button{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

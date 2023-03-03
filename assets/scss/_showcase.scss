@@ -1,0 +1,482 @@
+header{
+    .contain{
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            &__logo{
+                display: flex;
+                align-items: center;
+                width: 35%;
+                padding-left: 0;
+                span{
+                    color: grey;
+                }
+            }
+            &__right{
+                display: flex;
+                gap: 6px;
+                span{
+                    color: grey;
+                    text-decoration: underline;
+                }
+                .main{
+                    margin-right: 8px;
+                }
+            }
+            &__label{
+                display: none;
+            }
+        }
+    }
+    .contain1{
+        width: 100%;
+        background-color: #F5F5F9;
+        padding: 4px 0;
+        .contain{
+            .links{
+                &__input{
+                    display: none;
+                }
+                &__ul{
+                    display: flex;
+                    padding-left: 0;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    font-weight: 500;
+                    select{
+                        border: none;
+                        background-color: inherit;
+                        font-weight: 500;
+                        outline: none;
+                    }
+                    select:hover{
+                        color: #0088CF;
+                    }
+                    li:hover{
+                        color: #0088CF;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .profil ~ li{
+                        display: none;
+                    }
+                    label{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .showcase{
+        background-image: url(../media/Group\ 246.png), url(../media/Rectangle\ 54.png), url(../media/Rectangle\ 53.png);
+        background-repeat: no-repeat;
+        background-position: 100% 20%, top right, top right;
+        background-size: 55%, 30%, 35%;
+
+        .contain{
+            padding: 60px 0;
+            .text{
+                width: 60%;
+                &__h1{
+                    font-weight: 900;
+                    font-size: 32px;
+                    span{
+                        color: #0088CF;
+                    }
+                }
+                &__span{
+                    color: grey;
+                    font-size: 13px;
+                }
+                &__img{
+                    display: none;
+                }
+                &__button{
+                    margin: 50px 0;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #0088CF;
+                    color: white;
+                    font-weight: 600;
+                }
+                &__button:hover{
+                    color: #0088CF;
+                    background-color: white;
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    box-shadow: 0 0 8px #0088CF;
+                }
+                &__h3{
+                    font-weight: 900;
+                }
+                &__p{
+                    font-size: 14px;
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                .card{
+                    width: 32%;
+                    padding: 2% 2.5%;
+                    text-align: center;
+                    &__h3{
+                        font-weight: 800;
+                        font-size: 16px;
+                    }
+                    &__p{
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+                .card:hover{
+                    background-color: #0088CF;
+                    transition-duration: .3s;
+                    transition-timing-function: linear;
+                    color: white;
+                    cursor: pointer;
+                    h3{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .bottom1{
+        background-color: #F5F5F9;
+        padding: 40px 0;
+        .contain{
+            &__h3{
+                font-weight: 900;
+            }
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: baseline;
+                .fifty{
+                    width: 49%;
+                    li{
+                        margin: 10px 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .showcase1{
+        padding: 40px 0;
+        .contain{
+            .advertising{
+                background-image:linear-gradient(to right, #24232187, #24232187), url(../media/111.png);
+                padding: 30px 30px;
+                margin-bottom: 80px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .left{
+                    width: 52%;
+                    padding-top: 10px;
+                    &__h3{
+                        color: white;
+                        font-weight: 900;
+                    }
+                }
+                .right{
+                    width: 46%;
+                    font-weight: 500;
+                    color: white;
+                    font-size: 13px;
+                    background-color: #0088CF;
+                    padding: 24px 18px 0;
+                }
+            }
+            .main{
+                .top{
+                    width: 77%;
+                    &__h3{
+                        font-weight: 900;
+                        span{
+                            color: #0088CF;
+                        }
+                    }
+                    &__p{
+                        font-size: 14px;
+                    }
+                }
+                .center{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 20px 0;
+                    .card1{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 24%;
+                        border: none;
+                        margin: 10px 0;
+                        font-size: 12px;
+                        &__img{
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__ul{
+                            margin: 0;
+                            li{
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1025px){
+    header{
+        .contain{
+            .navbar{
+                &__logo{
+                    width: 50%;
+                    font-size: 10px;
+                    span{
+                        color: grey;
+                    }
+                }
+                &__right{
+                    .main{
+                        display: none;
+                    }
+                    img{
+                        cursor: pointer;
+                    }
+                }
+                &__label{
+                    margin-left: -20%;
+                    display: block;
+                }
+            }
+        }
+        .contain1{
+            padding: 0;
+            .contain{
+                .links{
+                    &__input{
+                        display: none;
+                    }
+                    label{
+                        display: block;
+                    }
+                    &__input:checked ~ ul{
+                        display: block;
+                        position: absolute;
+                        top: -10px;
+                        padding: 10px 20px;
+                        left: 0;
+                        height: 460px;
+                        width: 100%;
+                        background-color: white;
+                        line-height: 30px;
+                        li{
+                            margin-left: 5%;
+                        }
+                        li:hover{
+                            background-color: #F5F5F9;
+                        }
+                        .contact{
+                            border-top: 1.3px solid #0088CF;
+                        }
+                    }
+                    &__ul{
+                        display: none;
+                        label{
+                            color: #0088CF;
+                        }
+                    }
+                    .profil ~ li{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:800px){
+    header{
+        .showcase1{
+            padding: 40px;
+            .contain{
+                .advertising{
+                    .left{
+                        width: 100%;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+                .main{
+                    .top{
+                        width: 100%;
+                    }
+                    .center{
+                        .card1{
+                            width: 49%;
+                            &__ul{
+                                margin-right: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    header{
+        .contain{
+            .navbar{
+                &__logo{
+                    width: 65%;
+                    font-size: 7px;
+                }
+                &__right{
+                    width: 25%;
+                }
+                &__label{
+                    margin-left: 0;
+                    width: 10%;
+                }
+            }
+        }
+            .showcase{
+                background-image: url(../media/Rectangle\ 54.png), url(../media/Rectangle\ 53.png);
+                background-repeat: no-repeat;
+                background-position: 100% 30%, 100% 30%;
+                background-size: 60%, 68%;
+        
+                .contain{
+                    padding: 60px 0;
+                    .text{
+                        width: 100%;
+                        &__h1{
+                            font-weight: 900;
+                            font-size: 32px;
+                            span{
+                                color: #0088CF;
+                            }
+                        }
+                        &__img{
+                            display: block;
+                            width: 100%;
+                            margin-top: 50px;
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .card{
+                            width: 100%;
+                            margin: 10px 0;
+                            padding: 2% 2.5%;
+                            text-align: center;
+                            &__h3{
+                                font-weight: 800;
+                                font-size: 16px;
+                            }
+                            &__p{
+                                font-size: 14px;
+                                margin: 0;
+                            }
+                        }
+                        .card:hover{
+                            background-color: #0088CF;
+                            transition-duration: .3s;
+                            transition-timing-function: linear;
+                            color: white;
+                            cursor: pointer;
+                            h3{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom1{
+            .contain{
+                .flex{
+                    .fifty{
+                        width: 100% !important;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+}
+
+@media(max-width:550px){
+    header{
+        .showcase1{
+            padding: 0;
+            .contain{
+                width: 96%;
+                .advertising{
+                    padding: 10px;
+                    .left{
+                        width: 100%;
+                        &__h3{
+                            font-size: 16px;
+                        }
+                    }
+                    .right{
+                        width: 100%;
+                        &__p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .contain{
+            width: 96%;
+        }
+    }
+}
+
+@media(max-width:400px){
+    header{
+        .showcase1{
+            .contain{
+                .main{
+                    .center{
+                        .card1{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:270px){
+    header{
+        .contain{
+            .navbar{
+                &__right{
+                    display: none;
+                }
+                &__logo{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
